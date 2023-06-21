@@ -1,31 +1,29 @@
 public class Produto {
+
     // Atributos
-    int codigo;
-    private String nome;
-    double valor;
+    private double preco;
+    String modelo;
 
-    // setter - definição
-//    public void setNome(String valor){
-//        if(nivelAcesso == 5) {
-//            this.nome = valor;
-//        }
-//    }
+    // Setter
+    public void setPreco(double _preco){
+//      if(nivelAcesso == 5) {
+//          this.preco = _preco;
+//      }
+    }
 
-    // Construtor padrão
+
+    // Método construtor
     Produto(){}
-    // Sobrecarga do método construtor
-    Produto(int _codigo){
-        this.codigo = _codigo;
+    Produto(double preco){
+        this.preco = preco;
+
     }
-    // mais uma sobrecarga
-    Produto(int _codigo, String _nome){
-        this.codigo = _codigo;
-        this.nome = _nome;
-    }
-    public Produto(String nomeProduto) {
-        this.nome = nomeProduto;
+    // Mais uma sobrecarga
+    Produto(String modelo, double preco){
+        this.modelo = modelo;
+        this.preco = preco;
     }
 
-    public void setNome(String biscoito) {
-    }
+
+
 }

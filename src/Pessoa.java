@@ -6,9 +6,11 @@ public class Pessoa extends Animal {
     public void falar(){
         System.out.println("falei");
     }
+
     // Sobrecarga do método
-    public void falar(String volume){
+    public boolean falar(String volume){
         System.out.println("falei " + volume);
+        return false;
     }
     public String falar(String volume,
                         String tom){
