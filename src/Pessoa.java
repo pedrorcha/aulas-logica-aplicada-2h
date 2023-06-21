@@ -1,20 +1,21 @@
-public class Pessoa extends Animal{
+public class Pessoa extends Animal {
     // Atributos da classe
-    public String sobrenome;
+
+    String sobrenome;
     // Métodos da classe
-    public void falar(){        // void == sem retorno
+    public void falar(){
         System.out.println("falei");
     }
-    public String falar(String texto){
-        return texto;
+    // Sobrecarga do método
+    public void falar(String volume){
+        System.out.println("falei " + volume);
     }
-
-    // sobrescrita do método
+    public String falar(String volume,
+                        String tom){
+        return "falei " + volume + " e " + tom;
+    }
+    // Sobrescrita de método
     public void comer(){
-        System.out.println("pessoa comeu");
+        System.out.println("Comer como pessoa");
     }
-
-
-
-
 }
